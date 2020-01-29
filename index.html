@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>HTML wireframe</title>
@@ -5,25 +6,52 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <nav role="navigation">Nav</nav>
+  <div class="nav">
+    <label for ="toggle"> &#9776;</label>
+    <input type="checkbox" id="toggle"/>
+    <div class="menu">
+      <a href="#sec-bio">Bio</a>
+      <a href="#sec-projects">Projects</a>
+      <a href="https://github.com/ashleyngale">Github</a>
+      <a href="#sec-linkedIn">LinkedIn</a>
+    </div>
+    </div>
     <main role="main">
-        <header role="banner">
-            <h1>Hero: name and picture</h1>
-        </header>
 
-        <section >
-            bio and about me
+      <div id= "name-picture">
+            <h1>Ashley Gale</h1>
+            <p> Hello, my name is Ashley. I am a full stack web developer and entrepeneur!</p>
+      </div>
+
+        <section class= "divider">
+          Bio
         </section>
 
-        <section id= "bar">
-            divider
+<div id="sec-bio">
+<p> I am a recent Full Stack Web Developer and graduate from the Thinkful Bootcamp. I admire coding because I am able to identify a problem figure it out by coding. I welcome the  challenge of problem solving and that feeling of accomplishment and satisfaction when I reason out a good challenge. I mostly enjoy the art of coding because in a way it relates to my favorite hobbies which are painting, drawing, and clothing design, all of which make me feel like I’ve created something from nothing.
+</p>
+
+<p>When I'm not coding you can find me working on my clothing business, painting, reading, working out, or admiring nature.
+</p>
+  </div>
+
+        <section class= "divider">
+          Projects
         </section>
 
-        <section>
-            projects
-        </section>
+        <div id="sec-projects">
+          <img src="quizapp.jpg" class= "screenshot"
+           alt= "Quiz screenshot">
+          <img src="languages.jpg" class= "screenshot"
+           alt= "Languages used">
+          <p> This project displays 5 questions with 4 multiple choice options. It displays the question number the user is currently on,
+and a score which updates when the user clicks the submit button. It return the right answer if they answer incorrectly and 
+congratulates the user if they answer correctly. Lastly it shows your final score and offers a chance to retake the quiz.</p>
+        </div>
 
         <section>
             Project 3
@@ -33,9 +61,9 @@
             Section 4
         </section>
     </main>
-    <footer role="content-info">Footer
-      <address>
-        contact info 
+    <footer class="contact-info">
+      <address style="color:white">
+        Contact me! <a href="mailto:ashleyygale@gmail.com">Ashleyygale@hotmail.com</a> <br>
       </address>
     </footer>
 </body>
